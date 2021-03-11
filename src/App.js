@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Background from "./components/Background";
+import Footer from "./components/Footer";
 import './index.css';
 
 // function Greeting() {
@@ -27,6 +28,7 @@ function App() {
         <section className="App">
             <Navbar />
             <Background />
+            <Footer />
         </section>
     )
 }

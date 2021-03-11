@@ -6,7 +6,7 @@ function Navbar() {
         <section>
             <section>
                 <section>
-                    <nav className="bg-gradient-to-bl from-blue-700 via-blue-800 to-gray-900">
+                    <nav className="bg-gradient-to-bl from-blue-700 via-blue-800 to-green-400">
                         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                             <div className="flex items-center justify-between h-16">
                                 <div className="flex items-center">
@@ -44,6 +44,7 @@ function Navbar() {
                                 <div className="md:hidden" id="mobile-menu">
                                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                                         {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
+
                                     </div>
                                     <div className="pt-4 pb-3 border-t border-gray-700">
                                         <div className="flex items-center px-5">
