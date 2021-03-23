@@ -1,0 +1,38 @@
+.hero {
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(226, 221, 221);
+  background-image: url("../../Images/Alice.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1,
+.hero h2 {
+  color: rgb(255, 255, 255);
+}
+
+.hero h1 {
+  font-size: 60px;
+  padding-top: 140px;
+  margin-top: 0;
+  padding-bottom: 40px;
+}

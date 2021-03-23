@@ -1,53 +1,28 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import About from "./pages/About";
+import Skills from "./pages/Skills";
+import Contact from "./pages/Contact";
+import Portfolio from "./pages/Portfolio";
 import Navbar from "./components/Navbar";
-import Background from "./components/Background";
 import Footer from "./components/Footer";
-import './index.css';
-
-// function Greeting() {
-//   return (
-//     <div>
-//       <Question />
-//       <Tutorial />
-//     </div>
-
-//   );
-
-
-// }
-// const Question = () => <h1>What are you practice?</h1>
-// const Tutorial = () => {
-//   return (
-//     <p> Learning React</p>
-
-//   )
-// }
 
 function App() {
-    return (
-        <section className="App">
-            <Navbar />
-            <Background />
-            <Footer />
-        </section>
-    )
+  return (
+    <Router>
+      <div>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={About} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/skills" component={Skills} />
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
-
-// const Book = () => {
-//     return (
-//         <section>
-//             <article className="book">
-//                 <h1 >
-//                     Outlander
-//     </h1>
-//                 <img src="https://m.media-amazon.com/images/I/51PrW27sXWL.jpg" alt='' />
-//                 <h4>Outlander: A Novel (Outlander, Book 2) </h4>
-//                 <h3>Book 5 of 8: </h3>
-//                 <a href="#">Outlander</a>
-//             </article>
-
-//         </section>
-//     )
-// }
 
 export default App;
