@@ -3,11 +3,10 @@ import React, { Component } from "react";
 import PortfolioCard from "../components/PortfolioCard";
 import Wrapper from "../components/Wrapper";
 import Title from "../components/Title";
-import data from "../data.json";
 
 class Portfolio extends Component {
     state = {
-        data
+
     };
 
     render() {

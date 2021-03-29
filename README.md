@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+<h1 align="center"> Alice Piar Portfolio </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![license](https://img.shields.io/badge/license-MIT-blue.svg)
+![React](https://img.shields.io/badge/React-violet.svg)
+![Tailwinds CSS ](https://img.shields.io/badge/Tailwinds-CSS-blueviolet.svg)
+![Express](https://img.shields.io/badge/Express-turquoise.svg)
+![npm](https://img.shields.io/badge/npm-red.svg)
+![json](https://img.shields.io/badge/json-green.svg)
+![node.js](https://img.shields.io/badge/node.js-lightblue.svg)
+![craco.config](https://img.shields.io/badge/craco.config-darkblue.svg)
+![bcrypt](https://img.shields.io/badge/bcrypt-blue.svg)
+![Heroku](https://img.shields.io/badge/Heroku-purple.svg)
+![Terminal](https://img.shields.io/badge/terminal-violet.svg)
+![VisualStudioCode](https://img.shields.io/badge/VisualStudioCode-lightgreen.svg)
 
-## Available Scripts :sloth:
+### :bar_chart: Table of Contents:
 
-In the project directory, you can run:
+- [Description](#Description)
 
-### `npm start`
+- [Visuals](#Visuals)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Installation](#Installation)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Usage](#Usage)
 
-### `npm test`
+- [Tools](#Tools)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Contributing](#Contributing)
 
-### `npm run build`
+- [Profile](#Profile)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Application Requirements
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> Must use `ReactJS`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> Must use a `Node` and `Express Web Server`
 
-### `npm run eject`
+> Must deploy this application using Heroku with data. Follow our guide on deploying
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+> MERN applications to Heroku to do so.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> Must allow for or involve the `authentication` of users in some way
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+> Must have a `polished` front end/UI
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+> Must protect `API keys` in `Node` with environment variables
 
-## Learn More
+### Description:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Visuals:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![image]
 
-### Code Splitting
+### Installation:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+:computer:
 
-### Analyzing the Bundle Size
+### Usage:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+:exclamation: `npm run start` make sure to also to do `npm run deploy` to make sure the app run correctly with React.
 
-### Making a Progressive Web App
+### Tools:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Contributing:
 
-### Advanced Configuration
+:wave: Pull requests are welcome. For major changes,<br>
+Please open an issue first to discuss what you would like to change.<br>
+Please make sure to update tests as appropriate.<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![image]
+[Github]
 
-### Deployment
+### Profile:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+:octocat: [GitHub]
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+:purple_circle: [Heroku]
