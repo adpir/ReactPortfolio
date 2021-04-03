@@ -2,11 +2,13 @@
 import React from "react";
 
 
-
 const Home = () => {
 
   return (
-    <CardAboutMe />
+    <div>
+
+
+    </div>
 
   );
 }

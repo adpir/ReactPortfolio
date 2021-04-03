@@ -4,12 +4,15 @@ import React from "react";
 import Logo from "../../Images/favicon.ico";
 import { Link } from "react-router-dom";
 
+
+
 const Header = ({ toggle }) => {
     return (
         <nav
             className='flex justify-between items-center h-16 bg-gradient-to-r from-gray-900 via-blue-900 to-green-500 relative font-sans'
             role='navigation'
         >
+
             <Link to='/' className='pl-8 pt-2.6 '>
                 <img src={Logo} className="w-full " />
             </Link>
@@ -31,12 +34,15 @@ const Header = ({ toggle }) => {
             </div>
             <div className='pr-8 md:block  hidden'>
                 <Link to='/' className='p-4'>
-                    About
-        </Link>
-                <Link to='/menu' className='p-4'>
-                    Portfolio
+                    Home
         </Link>
                 <Link to='/about' className='p-4'>
+                    About
+        </Link>
+                <Link to='/portfolio' className='p-4'>
+                    Portfolio
+        </Link>
+                <Link to='/skills' className='p-4'>
                     Skills
         </Link>
                 <Link to='/contact' className='p-4'>

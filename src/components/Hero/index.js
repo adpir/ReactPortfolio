@@ -1,24 +1,35 @@
 /* eslint-disable no-template-curly-in-string */
 /* eslint-disable no-undef */
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import content from '../../content'
+import { Link as ScrollLink } from 'react-scroll';
+
 import Videos from '../../Videos/Abstract.mp4';
-import Fade from 'react-reveal/Fade'
+
+import Typical from 'react-typical'
+
 
 // import Header from '../Header'
-import Footer from '../Footer'
+
 
 
 //I am calling this my landing page
-const Hero = ({
-    heading,
-    ...otherProps
-}) => {
+// const Hero = ({
+//     heading,
+//     ...otherProps
+// }) => {
+
+
+export default function Hero() {
+    const [animated, setAnimated] = useState(false);
+    useEffect(() => {
+        setAnimated(true)
+    }, []);
+
     return (
         <div className="min-h-full bg-gradient-to-r from-green-400 to-blue-500 font-body">
 
             < div className="h-screen flex flex-col">
-
-
                 <div
                     className=" relative flex items-center justify-center h-full
                 bg-cover bg-center bg-fixed bg-no-repeat"
@@ -26,27 +37,40 @@ const Hero = ({
                     style={{
                         backgroundImage: `url(${Videos})`
                     }}>
-                    <Fade left cascade>
-                        {heading && <h1 className="
-                 relative px-2.5 text-gray-400 font-mono uppercase z-10 text-4xl text-center italic md:text-4xl ">
-                            {heading}
-                        </h1>}
-                    </Fade>
-                    <div className="
-                    z-0 absolute -top-0 -left-0 h-full w-full bg-black opacity-40
-                    "
-                    />
+                    <div className="text-white font-dosis text-center md:text-left">
+                        <h2 className={`${
+                            animated ? '' : 'translate-y-10 opacity-0'
+                            }transform transition duration-2000 ease-in-out text-3xl md:text-5xl font-bold`}>
+                            {content.header.text[0]}
+                            <br />
+                            {content.header.text[1]}
+                        </h2>
+                        <h1 className={`${
+                            animated ? '' : 'translate-y-10 opacity-0'
+                            }transform transition duration-2000 ease-in-out font-bold text-3xl bg-cyan-50`}>
+                            {content.header.text[2]}{''}
+                            <Typical
+                                steps={content.header.typical}
+                                loop={Infinity}
+                                className="inline-block"
+                            />
+                        </h1>
+                        <ScrollLink to="/about" smooth={true}>
+                            <button className="animate-float bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 px-10 py-3 text-xl uppercase mt-10 rounded-lg">
+                                {content.header.btnText}
+                            </button>
+                        </ScrollLink>
+                    </div>
 
                 </div>
             </div >
-            <div className="w-full max-w-7xl mx-auto">
+            {/* <div className="w-full max-w-7xl mx-auto"> /
                 {otherProps.children}
-            </div>
-            <Footer />
+        </div> */}
         </div >
     );
 };
-Hero.defaultProps = {
-    heading: " ",
-};
-export default Hero;
+// Hero.defaultProps = {
+//     heading: " ",
+// };
+
