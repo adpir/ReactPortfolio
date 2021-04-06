@@ -1,40 +1,35 @@
-// import React from "react";
+import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
+import content from '../content';
 
-
-// export default function Skills() {
-//     return (
-//         <section className="resume-section" id="skills">
-//             <div className="resume-section-content">
-//                 <h1 className="mb-6">Skills</h1>
-//                 <div className="subheading mb-3">Programming Languages AND Tools</div>
-//                 <ul className="list-inline dev-icons">
-//                     <li className="list-inline-item"><i className="fab fa-html5"></i></li>
-//                     <li className="list-inline-item"><i className="fab fa-css3-alt"></i></li>
-//                     <li className="list-inline-item"><i className="fab fa-js-square"></i></li>
-//                     <li className="list-inline-item"><i className="fab fa-node-js"></i></li>
-//                     <li className="list-inline-item"><i className="fab fa-npm"></i></li>
-//                 </ul>
-//                 <div className="subheading mb-3">Workflow</div>
-//                 <ul className="fa-ul mb-0">
-//                     <li>
-//                         <span className="fa-li"></span>
-//                     Mobile-First, Responsive Design
-//                 </li>
-//                     <li>
-//                         <span className="fa-li"></span>
-//                     Cross Browser Testing AND Debugging
-//                 </li>
-//                     <li>
-//                         <span className="fa-li"></span>
-//                     Cross Functional Teams
-//                 </li>
-//                     <li>
-//                         <span className="fa-li"></span>
-//                     Agile Development
-//                 </li>
-//                 </ul>
-//             </div>
-//         </section>
-//     )
-// }
+export default function Skills() {
+    return (
+        <div
+            className="min-h-screen flex items-center justify-center flex-col"
+            style={{
+                background: '#eee',
+            }}
+        >
+            <h1 className="text-5xl font-dosis font-bold mb-20">My Skills</h1>
+            <div>
+                <div className="flex flex-wrap justify-center">
+                    {content.skills.tech.map((tech, index) => (
+                        <span
+                            key={index}
+                            className={` h-40 w-40 bg-white shadow-xl  ml-2  rounded-full flex justify-center items-center p-5 m-2 ${
+                                index % 2 !== 0 ? 'animate-bounce' : 'animate-bounceFirst'
+                                }`}
+                        >
+                            <LazyLoadImage effect="blur" src={tech.img} alt={tech.alt} />
+                        </span>
+                    ))}
+                </div>
+            </div>
+            <p className="mt-10 mb-10 w-11/12 md:max-w-xl text-center inline-block text-xl md:text-2xl font-dosis ">
+                {content.skills.desc}.
+      </p>
+        </div>
+    );
+}

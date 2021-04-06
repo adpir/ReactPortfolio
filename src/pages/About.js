@@ -7,12 +7,12 @@ export default function About() {
         <div className="min-h-screen flex flex-col items-center justify-center font-dosis bg-gradient-to-r from-green-400 to-blue-500" id="/about">
             <h1 className="text-center text-gray-500 text-5xl font-semibold font-serif "> About Me</h1>
             <div className=" flex flex-wrap justify-center mt-10">
-                {content.about.tech.map((tech, index) => {
+                {content.about.imag.map((imag, index) => {
                     return (
                         <span className={`${
                             index % 2 === 0 ? 'animate-float' : 'animate-refloat'
                             } w-3/6 h-3/6  bg-gradient-to-r from-green-400 to-blue-500 shadow-2xl m-2 square-full flex items-center p-5`}>
-                            <LazyLoadImage src={tech.img} alt={tech.alt} />
+                            <LazyLoadImage src={imag.img} alt={imag.alt} />
 
                         </span>
                     );

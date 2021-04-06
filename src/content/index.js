@@ -13,6 +13,8 @@ export default {
             2000,
             "Leader 🤓 ",
             2000,
+            "And",
+            2000,
             "Software Engineer 👩‍💻",
             2000,
         ],
@@ -21,9 +23,9 @@ export default {
 
     about: {
         title: "About",
-        tech: [
+        imag: [
             {
-                img: process.env.PUBLIC_URL + "/assets/Alice.png",
+                img: process.env.PUBLIC_URL + "/images/Alice.png",
                 alt: "alice",
             },
             // {
@@ -40,12 +42,162 @@ export default {
             // },
         ],
         desc: `A true creative at heart both on and off of the computer, I have always enjoyed making things work
-               and look the way that they should. Born in the U.S. territory of Puerto Rico, I always dreamed of
-             coming to the states to immerse myself in the culture and learn English. I moved here 11 years ago
-            and have been in Minneapolis ever since. I have a bachelors in Theatre, have always been involved in
-            the arts, and love finding new ways to get creative. I have been working at a software company for the last five years and recently, I completed a full
-         stack advanced coding program at the University of Minnesota that expanded my creative toolbelt immensely. I enjoy tackling problems, have a strong range of leadership experience in multiple fields of work, and work well with others. Recently I was nominated as a “Transformer” by the team I
-                                    lead for my hard work and dedication within the company. I look forward to opportunities to create
-                                    or augment existing systems in ways that ‘wow’ people and make a real, long lasting impressions.`,
+ and look the way that they should. Born in the U.S. territory of Puerto Rico, I always dreamed of coming to the states to immerse myself in the culture and learn English. I moved here 11 years ago and have been in Minneapolis ever since. I have a bachelor's in Theatre, have always been involved in the arts, and love finding new ways to get creative. I worked for over six years at a software company. I recently completed a full-stack software engineer coding program at the University of Minnesota that expanded my creative toolbelt immensely. I enjoy tackling problems, have a strong range of leadership experience in multiple fields of work, and work well with others. Recently I was nominated as a "Transformer" by the team I
+ lead for my hard work and dedication within the company. I look forward to opportunities to create
+ or augment existing systems in ways that 'wow' people and make real, long-lasting impressions.`,
+        btnText: "Scroll down",
     },
+    portfolio: {
+        title: 'Portfolio',
+        tech: [
+            {
+                img: process.env.PUBLIC_URL + '/images/WC1.png',
+                alt: 'dinner',
+
+            },
+        ],
+        name: `Work Connections`,
+        desc:
+            ` Word Connections is an app where the user can
+              search for a word and get the word's definitions. A giphy will illustrate
+             the meaning of the word, and using local Storage; the user will be able to
+              see the history of the words`,
+
+    },
+    portfolio2: {
+        title: 'Portfolio',
+        tech: [
+            {
+                img: process.env.PUBLIC_URL + '/images/dinner.png',
+                alt: 'dinner',
+            },
+        ],
+        name: `Dinner And A Movie`,
+        desc:
+            ` Create an application app were you are able to search a movie 
+    and it will automatically pick a meal to match, including the recipe to that meal!.`,
+    },
+    portfolio3: {
+        title: 'Portfolio',
+        tech: [
+            {
+                img: process.env.PUBLIC_URL + '/images/YOGO.jpg',
+                alt: 'yogo',
+            },
+        ],
+        name: `Yogo`,
+        desc:
+            ` YoGo is an app to help user prioritize self-care. Self-care is essential for our health and well-being, especially with increased stressors introduced within the last year.
+As a user, I want an app that will help me prioritize and manage my self-care practices and routines.`,
+    },
+    portfolio4: {
+        title: 'Portfolio',
+        tech: [
+            {
+                img: process.env.PUBLIC_URL + '/images/burger.png',
+                alt: 'burger',
+            },
+        ],
+        name: `Get In My Be-LLY`,
+        desc:
+            ` This burger app uses this programming tools like MySQL, Node, Express, Handlebars, and a homemade ORM (yum!). 
+   Remember to follow the MVC design pattern; use MySQL to query and route data in your app, and Handlebars to generate your HTML`,
+    },
+    portfolio5: {
+        title: 'Portfolio',
+        tech: [
+            {
+                img: process.env.PUBLIC_URL + '/images/mysql.png',
+                alt: 'mysql',
+            },
+        ],
+        name: `Employee Database`,
+        desc:
+            ` Developers are often tasked with creating interfaces that make it easy for non-developers to view and interact with information stored in databases. Often these interfaces are known as Content Management Systems.This project included  a solution for managing a company's employees using node, inquirer, and MySQL.
+.`,
+    },
+    portfolio6: {
+        title: 'Portfolio',
+        tech: [
+            {
+                img: process.env.PUBLIC_URL + '/images/workout.png',
+                alt: 'workout',
+            },
+        ],
+        name: `Fitness Tracker`,
+        desc:
+            `As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+`,
+    },
+    portfolio7: {
+        title: 'Portfolio',
+        tech: [
+            {
+                img: process.env.PUBLIC_URL + '/images/Progressive.png',
+                alt: 'Progressive',
+            },
+        ],
+        name: `Progressive Budget`,
+        desc:
+            `Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.`
+
+    },
+    portfolio8: {
+        title: 'Portfolio',
+        tech: [
+            {
+                img: process.env.PUBLIC_URL + '/images/note.png',
+                alt: 'note',
+            },
+        ],
+        name: `Note Taker`,
+        desc:
+            `Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
+`,
+    },
+    portfolio9: {
+        title: 'Portfolio',
+        tech: [
+            {
+                img: process.env.PUBLIC_URL + '/images/emptdirectory.png',
+                alt: 'emptdirectory',
+            },
+        ],
+        name: `Employee Directory`,
+        desc:
+            `Employee Directory with React. When the user loads the page, a table of employees should render.
+`,
+    },
+    skills: {
+        title: 'Skills',
+        tech: [
+            {
+                img: process.env.PUBLIC_URL + '/logo512.png',
+                alt: 'react',
+            },
+            {
+                img: process.env.PUBLIC_URL + '/images/node.png',
+                alt: 'node',
+            },
+            {
+                img: process.env.PUBLIC_URL + '/images/mongo.png',
+                alt: 'mongo',
+            },
+            {
+                img: process.env.PUBLIC_URL + '/images/express.png',
+                alt: 'express',
+            },
+            {
+                img: process.env.PUBLIC_URL + '/images/express.png',
+                alt: 'express',
+            },
+            {
+                img: process.env.PUBLIC_URL + '/images/express.png',
+                alt: 'express',
+            },
+
+        ],
+        // desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only`,
+    },
+
 };
