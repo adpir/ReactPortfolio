@@ -6,11 +6,15 @@ import { Link as ScrollLink } from 'react-scroll';
 import Hero from './components/Hero/index'
 import Header from './components/Header'
 import Dropdown from './components/Dropdown';
+
 import Footer from './components/Footer';
 
 //another section including the pages
 import About from './pages/About'
 import Home from './pages/Home'
+import Portfolio from './pages/Portfolio';
+import Skills from './pages/Skills';
+
 function App() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -44,10 +48,13 @@ function App() {
 
         </ScrollLink> */}
         <Route exact path="/" component={Home} />
-        <ScrollLink to path="/about" component={About} />
+        {/* <ScrollLink to path="/about" component={About} /> */}
       </Switch>
       <Hero />
       <About />
+      < Portfolio />
+
+      <Skills />
       <Footer />
       {/* <Switch>
           <Route exact path="/" component={About} />
