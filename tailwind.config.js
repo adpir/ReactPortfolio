@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const { lightBlue } = require('tailwindcss/colors')
 
 
 module.exports = {
@@ -179,13 +180,43 @@ module.exports = {
     animation: ['responsive'],
   },
   colors: {
-    //my color palette here
-    Cyan: colors.cyan,
-    Gray: colors.gray,
-    Teal: colors.teal,
-    Green: colors.green,
-    Esmerald: colors.emerald,
-    Blue: colors.blueGray,
+    transparent: "transparent",
+    current: "currentColor",
+    teal: {
+      100: "#e5fff0",
+      200: "#b8ffd5",
+      300: "#8fffbe",
+      400: "#61ffa3",
+      500: "#33ff88",
+      600: "#05ff6d",
+      700: "#00db5b",
+      800: "#00ad48",
+      900: "#008035"
+    },
+    cyan: {
+      100: "#e5fffd",
+      200: "#b8fff9",
+      300: "#8ffff6",
+      400: "#61fff2",
+      500: "#33ffee",
+      600: "#05ffea",
+      700: "#00dbc9",
+      800: "#00ad9f",
+      900: "#008075",
+    },
+    lightBlue: {
+      50: "#F0F9FF",
+      100: "#E0F2FE",
+      200: "#BAE6FD",
+      300: "#7DD3FC",
+      400: "#38BDF8",
+      500: "#0EA5E9",
+      600: "#0284C7",
+      700: "#0369A1",
+      800: "#075985",
+      900: "#0C4A6E"
+    }
   },
   plugins: [],
+
 }
