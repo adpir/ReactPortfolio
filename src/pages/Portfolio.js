@@ -13,14 +13,11 @@ function Portfolio() {
                 <div className="px-4 py-5 sm:px-6">
                     <h1 className="text-5xl font-dosis text-center font-bold  text-gray-600 ">Portfolio</h1>
                 </div>
-                <div className="px-4 py-5 sm:p-6">
-                    <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
-                        <CardAboutMe
-
-                        />
-                    </div>  </div>
-                <div class="bg-gray-50 px-4 py-5 sm:p-6">
+                <div className="bg-gray-50 px-4 py-5 sm:p-6">
+                    <CardAboutMe
+                    />
                 </div>
+
             </div>
         </div>
     );

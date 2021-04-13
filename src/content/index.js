@@ -47,7 +47,7 @@ export default {
  or augment existing systems in ways that 'wow' people and make real, long-lasting impressions.`,
         btnText: "Scroll down",
     },
-    portfolio: {
+    portfolioWC: {
         title: 'Portfolio',
         tech: [
             {
@@ -56,7 +56,7 @@ export default {
 
             },
         ],
-        name: `Work Connections`,
+        name: `Word Connections`,
         desc:
             ` Word Connections is an app where the user can
               search for a word and get the word's definitions. A giphy will illustrate
@@ -116,12 +116,12 @@ As a user, I want an app that will help me prioritize and manage my self-care pr
             ` Developers are often tasked with creating interfaces that make it easy for non-developers to view and interact with information stored in databases. Often these interfaces are known as Content Management Systems.This project included  a solution for managing a company's employees using node, inquirer, and MySQL.
 .`,
     },
-    portfolio6: {
+    portfolioFitness: {
         title: 'Portfolio',
         tech: [
             {
                 img: process.env.PUBLIC_URL + '/images/workout.png',
-                alt: 'workout',
+                alt: 'Fitness',
             },
         ],
         name: `Fitness Tracker`,
@@ -129,12 +129,12 @@ As a user, I want an app that will help me prioritize and manage my self-care pr
             `As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
 `,
     },
-    portfolio7: {
+    portfolioBudget: {
         title: 'Portfolio',
         tech: [
             {
                 img: process.env.PUBLIC_URL + '/images/Progressive.png',
-                alt: 'Progressive',
+                alt: 'Budget',
             },
         ],
         name: `Progressive Budget`,
@@ -200,14 +200,7 @@ As a user, I want an app that will help me prioritize and manage my self-care pr
                 img: process.env.PUBLIC_URL + '/images/express.png',
                 alt: 'express',
             },
-            {
-                img: process.env.PUBLIC_URL + '/images/express.png',
-                alt: 'express',
-            },
-            {
-                img: process.env.PUBLIC_URL + '/images/express.png',
-                alt: 'express',
-            },
+
 
         ],
         // desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only`,
