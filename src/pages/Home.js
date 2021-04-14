@@ -1,16 +1,12 @@
-// /* eslint-disable react/jsx-no-comment-textnodes */
-import React from "react";
+import React, { Component } from 'react'
 
+export default class Home extends Component {
+  state = {};
+  render() {
+    return (
+      <div className="home-section" id="home">
 
-const Home = () => {
-
-  return (
-    <div>
-
-
-    </div>
-
-  );
+      </div>
+    )
+  }
 }
-
-export default Home;

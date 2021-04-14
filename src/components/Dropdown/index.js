@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from "react-scroll";
 
 const Dropdown = ({ isOpen, toggle }) => {
     return (
@@ -11,18 +11,42 @@ const Dropdown = ({ isOpen, toggle }) => {
             }
             onClick={toggle}
         >
-            <Link to='/' className='p-4 hover:text-gray-300'>
-                About
-      </Link>
-            <Link to='/menu' className='p-4 hover:text-gray-300'>
-                Portfolio
-      </Link>
-            <Link to='/about' className='p-4 hover:text-gray-300'>
-                Skills
-      </Link>
-            <Link to='/contact' className='p-4 hover:text-gray-300'>
-                Contact
-      </Link>
+            <ScrollLink
+                className="p-4 hover:text-gray-300"
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+            >About</ScrollLink>
+            <ScrollLink
+                className="p-4 hover:text-gray-300"
+                activeClass="active"
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+            >Portfolio</ScrollLink>
+            <ScrollLink
+                className="p-4 hover:text-gray-300"
+                activeClass="active"
+                to="skills"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+            >Skills</ScrollLink>
+            <ScrollLink
+                className="p-4 hover:text-gray-300"
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+            >Contact</ScrollLink>
         </div>
     );
 };

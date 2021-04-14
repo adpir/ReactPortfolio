@@ -44,9 +44,7 @@ function App() {
       <Header toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Switch>
-        {/* <ScrollLink to="/about" smooth={true}>
 
-        </ScrollLink> */}
         <Route exact path="/" component={Home} />
         {/* <ScrollLink to path="/about" component={About} /> */}
       </Switch>

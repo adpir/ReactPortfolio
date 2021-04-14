@@ -3,6 +3,7 @@
 import React from "react";
 import Logo from "../../Images/favicon.ico";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 
 
@@ -16,7 +17,7 @@ const Header = ({ toggle }) => {
             <Link to='/' className='pl-8 pt-2.6 '>
                 <img src={Logo} className="w-full " />
             </Link>
-            <div className='px-4 cursor-pointer md:hidden' onClick={toggle}>
+            <div className='pl-4 cursor-pointer  md:hidden ' onClick={toggle}>
                 <svg
                     className='w-8 h-8'
                     fill='none'
@@ -33,81 +34,46 @@ const Header = ({ toggle }) => {
                 </svg>
             </div>
             <div className='pr-8 md:block  hidden'>
-                <Link to='/' className='p-4'>
-                    Home
-        </Link>
-                <Link to='/about' className='p-4'>
-                    About
-        </Link>
-                <Link to='/portfolio' className='p-4'>
-                    Portfolio
-        </Link>
-                <Link to='/skills' className='p-4'>
-                    Skills
-        </Link>
-                <Link to='/contact' className='p-4'>
-                    Contact
-        </Link>
+                <ScrollLink
+                    className="p-4 hover:text-gray-300"
+                    activeClass="active"
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                >Home</ScrollLink>
+                <ScrollLink
+                    className="p-4 hover:text-gray-300"
+                    activeClass="active"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                >About</ScrollLink>
+                <ScrollLink
+                    className="p-4 hover:text-gray-300"
+                    activeClass="active"
+                    to="portfolio"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                >Portfolio</ScrollLink>
+                <ScrollLink
+                    className="p-4 hover:text-gray-300"
+                    activeClass="active"
+                    to="skills"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                > Skills
+                </ScrollLink>
             </div>
         </nav>
     );
 
 };
-
 export default Header;
-
-// const Header = () => {
-//     const [active, setActive] = useState(false);
-
-//     const onClick = () => {
-//         setActive(!active);
-//     };
-
-//     return (
-//         <header className="bg-gradient-to-r from-gray-900 via-blue-900 to-green-500 relative">
-//             <div className="max-w-7xl mx-auto flex items-center justify-between p-2.5">
-//                 <div className="w-14">
-//                     <img src={Logo} className="w-full" />
-//                 </div>
-
-//                 <div onClick={onClick}
-//                     className={`
-//                 md:hidden uppercase
-//                 `}
-//                 >
-//                     Menu
-//                     </div>
-
-//                 <nav className={`
-//                 ${!active && 'hidden'}
-//                 absolute flex flex-col top-full w-full left-0 z-20
-//                 md:static md:w-auto md:flex
-//                 `}
-//                 >
-//                     <ul className="md:flex-row md:flex">
-//                         <li className="list-none md:mr-5">
-//                             <Link className="flex w-full text-base uppercase hover:text-gray-300 cursor-pointer
-//                             pt-2.5 px-2.5">
-//                                 About
-//                         </Link>
-//                         </li>
-//                         <li className="list-none md:mr-5">
-//                             <Link className="flex w-full text-base uppercase hover:text-gray-300 cursor-pointer
-//                             pt-2.5 px-2.5">
-//                                 About
-//                         </Link>
-//                         </li>
-//                         <li className="list-none md:mr-5">
-//                             <Link className="flex w-full text-base uppercase hover:text-gray-300 cursor-pointer
-//                             pt-2.5 px-2.5">
-//                                 About
-//                         </Link>
-//                         </li>
-//                     </ul>
-//                 </nav>
-//             </div>
-//         </header>
-//     );
-// };
-
-// export default Header;

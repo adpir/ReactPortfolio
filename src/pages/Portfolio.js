@@ -8,8 +8,8 @@ import CardAboutMe from '../components/CardAboutMe';
 
 function Portfolio() {
     return (
-        <div>
-            <div class="bg-gray-100 overflow-hidden shadow rounded-lg">
+        <div className="portfolio-section" id="portfolio">
+            <div class="min-h-screen bg-gray-100 overflow-hidden shadow rounded-lg">
                 <div className="px-4 py-5 sm:px-6">
                     <h1 className="text-5xl font-dosis text-center font-bold  text-gray-600 ">Portfolio</h1>
                 </div>

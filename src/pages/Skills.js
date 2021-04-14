@@ -12,9 +12,9 @@ import tailwinds from '../Images/tailwinds.png'
 
 export default function Skills() {
     return (
-        <div>
+        <div className="skills-section" id="skills">
             <h1 className="text-5xl font-dosis text-center font-bold  text-gray-600 ">Skills</h1>
-            <div className="rounded-lg bg-gray-200 overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px">
+            <div className=" min-h-screen rounded-lg bg-gray-200 overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px">
                 <div className="rounded-tl-lg rounded-tr-lg sm:rounded-tr-none relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500">
                     <div>
                         <span className="rounded-lg inline-flex p-3 bg-teal-50 text-teal-700 ring-4 ring-white">
