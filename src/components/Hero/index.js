@@ -3,21 +3,8 @@
 import React, { useState, useEffect } from 'react'
 import content from '../../content'
 import { Link as ScrollLink } from 'react-scroll';
-
 import Videos from '../../Videos/Abstract.mp4';
-
 import Typical from 'react-typical'
-
-
-// import Header from '../Header'
-
-
-
-//I am calling this my landing page
-// const Hero = ({
-//     heading,
-//     ...otherProps
-// }) => {
 
 
 export default function Hero() {
@@ -64,13 +51,8 @@ export default function Hero() {
 
                 </div>
             </div >
-            {/* <div className="w-full max-w-7xl mx-auto"> /
-                {otherProps.children}
-        </div> */}
+
         </div >
     );
 };
-// Hero.defaultProps = {
-//     heading: " ",
-// };
 

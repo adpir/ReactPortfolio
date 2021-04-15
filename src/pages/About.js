@@ -1,6 +1,7 @@
 import React from 'react'
 import content from '../content/index'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Link as ScrollLink } from 'react-scroll';
 
 export default function About() {
     return (
@@ -20,7 +21,13 @@ export default function About() {
                     })}
 
                 </div>
-                <p className="text-blue-800 bg-gray-500 font-sans p-2.5 rounded-lg w-9/12 sw-11/12 text-xl mt-10"> {content.about.desc}</p>
+                <p className="text-blue-800 font-sans p-2.5 rounded-lg w-9/12 sw-11/12 text-xl mt-10"> {content.about.desc}</p>
+
+                <ScrollLink to="/portfolio" smooth={true}>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 animate-float mt-10 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg>
+                </ScrollLink>
             </div>
         </div>
     )

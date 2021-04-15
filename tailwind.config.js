@@ -1,5 +1,4 @@
-const colors = require('tailwindcss/colors')
-const { lightBlue } = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors');
 
 
 module.exports = {
@@ -204,7 +203,7 @@ module.exports = {
       800: "#00ad9f",
       900: "#008075",
     },
-    lightBlue: {
+    lightblue: {
       50: "#F0F9FF",
       100: "#E0F2FE",
       200: "#BAE6FD",

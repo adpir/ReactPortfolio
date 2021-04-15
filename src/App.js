@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Switch, Route } from "react-router-dom";
-import { Link as ScrollLink } from 'react-scroll';
 
 //layouts- but I called it hero
 import Hero from './components/Hero/index'
 import Header from './components/Header'
 import Dropdown from './components/Dropdown';
-
 import Footer from './components/Footer';
 
 //another section including the pages
@@ -14,6 +12,7 @@ import About from './pages/About'
 import Home from './pages/Home'
 import Portfolio from './pages/Portfolio';
 import Skills from './pages/Skills';
+import Contact from './pages/Contact';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,25 +43,14 @@ function App() {
       <Header toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Switch>
-
         <Route exact path="/" component={Home} />
-        {/* <ScrollLink to path="/about" component={About} /> */}
       </Switch>
       <Hero />
       <About />
       < Portfolio />
-
       <Skills />
+      <Contact />
       <Footer />
-      {/* <Switch>
-          <Route exact path="/" component={About} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/skills" component={Skills} />
-        </Switch>
-        <Footer /> */}
-      {/* </div> */}
       <Route />
     </>
 

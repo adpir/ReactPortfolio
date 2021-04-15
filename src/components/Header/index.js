@@ -16,6 +16,7 @@ const Header = ({ toggle }) => {
 
             <Link to='/' className='pl-8 pt-2.6 '>
                 <img src={Logo} className="w-full " />
+
             </Link>
             <div className='pl-4 cursor-pointer  md:hidden ' onClick={toggle}>
                 <svg
@@ -31,9 +32,11 @@ const Header = ({ toggle }) => {
                         strokeWidth='2'
                         d='M4 6h16M4 12h16M4 18h16'
                     />
+
                 </svg>
             </div>
             <div className='pr-8 md:block  hidden'>
+
                 <ScrollLink
                     className="p-4 hover:text-gray-300"
                     activeClass="active"
@@ -41,8 +44,9 @@ const Header = ({ toggle }) => {
                     spy={true}
                     smooth={true}
                     offset={0}
-                    duration={500}
-                >Home</ScrollLink>
+                    duration={5000}
+                >Home
+                </ScrollLink>
                 <ScrollLink
                     className="p-4 hover:text-gray-300"
                     activeClass="active"
@@ -50,8 +54,9 @@ const Header = ({ toggle }) => {
                     spy={true}
                     smooth={true}
                     offset={0}
-                    duration={500}
-                >About</ScrollLink>
+                    duration={5000}
+                >About
+                </ScrollLink>
                 <ScrollLink
                     className="p-4 hover:text-gray-300"
                     activeClass="active"
@@ -59,18 +64,19 @@ const Header = ({ toggle }) => {
                     spy={true}
                     smooth={true}
                     offset={0}
-                    duration={500}
-                >Portfolio</ScrollLink>
+                    duration={5000}
+                >Portfolio
+                </ScrollLink>
                 <ScrollLink
-                    className="p-4 hover:text-gray-300"
                     activeClass="active"
                     to="skills"
                     spy={true}
                     smooth={true}
                     offset={0}
-                    duration={500}
+                    duration={5000}
                 > Skills
                 </ScrollLink>
+
             </div>
         </nav>
     );

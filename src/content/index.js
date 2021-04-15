@@ -28,18 +28,6 @@ export default {
                 img: process.env.PUBLIC_URL + "/images/Alice.png",
                 alt: "alice",
             },
-            // {
-            //     img: process.env.PUBLIC_URL + '/logo512.png',
-            //     alt: 'react',
-            // },
-            // {
-            //     img: process.env.PUBLIC_URL + '/assets/express.png',
-            //     alt: 'express',
-            // },
-            // {
-            //     img: process.env.PUBLIC_URL + '/assets/node.png',
-            //     alt: 'node',
-            // },
         ],
         desc: `A true creative at heart both on and off of the computer, I have always enjoyed making things work
  and look the way that they should. Born in the U.S. territory of Puerto Rico, I always dreamed of coming to the states to immerse myself in the culture and learn English. I moved here 11 years ago and have been in Minneapolis ever since. I have a bachelor's in Theatre, have always been involved in the arts, and love finding new ways to get creative. I worked for over six years at a software company. I recently completed a full-stack software engineer coding program at the University of Minnesota that expanded my creative toolbelt immensely. I enjoy tackling problems, have a strong range of leadership experience in multiple fields of work, and work well with others. Recently I was nominated as a "Transformer" by the team I
@@ -187,18 +175,34 @@ As a user, I want an app that will help me prioritize and manage my self-care pr
             {
                 img: process.env.PUBLIC_URL + '/logo512.png',
                 alt: 'react',
+                name: `Employee Directory`,
+                desc:
+                    `Employee Directory with React. When the user loads the page, a table of employees should render.
+`,
             },
             {
                 img: process.env.PUBLIC_URL + '/images/node.png',
                 alt: 'node',
+                name: `Employee Directory`,
+                desc:
+                    `Employee Directory with React. When the user loads the page, a table of employees should render.
+`,
             },
             {
                 img: process.env.PUBLIC_URL + '/images/mongo.png',
                 alt: 'mongo',
+                name: `Employee Directory`,
+                desc:
+                    `Employee Directory with React. When the user loads the page, a table of employees should render.
+`,
             },
             {
                 img: process.env.PUBLIC_URL + '/images/express.png',
                 alt: 'express',
+                name: `Employee Directory`,
+                desc:
+                    `Employee Directory with React. When the user loads the page, a table of employees should render.
+`,
             },
 
 
