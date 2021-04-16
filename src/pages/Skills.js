@@ -5,7 +5,7 @@ import { DiMongodb } from "react-icons/di";
 import { DiCss3 } from "react-icons/di";
 import { DiBootstrap } from "react-icons/di";
 import { DiReact } from "react-icons/di";
-// import { Link as ScrollLink } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 
 export default function Skills() {
     return (
@@ -25,13 +25,15 @@ export default function Skills() {
                     <li className="flex flex-wrap px-40 py-5 text-gray-500 text-2xl uppercase  sm:justify-center
                      font-semibold font-serif">
                         Mobile-First * Responsive Design * Dynamic * Fast *
-                    {/* <ScrollLink to="/contact" smooth={true}>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 animate-float mt-10 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                            </svg>
-                        </ScrollLink> */}
+                    
                     </li>
+                 
                 </ul>
+                <ScrollLink to="/" smooth={true}>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 animate-float mt-10 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg>
+                </ScrollLink>
             </div>
         </div>
 
