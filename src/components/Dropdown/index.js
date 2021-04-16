@@ -18,7 +18,7 @@ const Dropdown = ({ isOpen, toggle }) => {
                 spy={true}
                 smooth={true}
                 offset={0}
-                duration={500}
+                duration={3000}
             >About</ScrollLink>
             <ScrollLink
                 className="p-4 hover:text-gray-300"
@@ -27,7 +27,7 @@ const Dropdown = ({ isOpen, toggle }) => {
                 spy={true}
                 smooth={true}
                 offset={0}
-                duration={500}
+                duration={3000}
             >Portfolio</ScrollLink>
             <ScrollLink
                 className="p-4 hover:text-gray-300"
@@ -36,7 +36,7 @@ const Dropdown = ({ isOpen, toggle }) => {
                 spy={true}
                 smooth={true}
                 offset={0}
-                duration={500}
+                duration={4000}
             >Skills</ScrollLink>
             <ScrollLink
                 className="p-4 hover:text-gray-300"
@@ -45,7 +45,7 @@ const Dropdown = ({ isOpen, toggle }) => {
                 spy={true}
                 smooth={true}
                 offset={0}
-                duration={500}
+                duration={4000}
             >Contact</ScrollLink>
         </div>
     );
