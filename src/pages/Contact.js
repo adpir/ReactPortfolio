@@ -12,12 +12,12 @@ export default function Contact() {
         <>
             <section
                 id="contact"
-                className="relative w-full min-h-screen bg-gray-300 text-blue-900"
+                className="relative w-full min-h-screen bg-blue-900 text-blue-900"
             >
                 <h1 className="text-4xl p-4 font-bold tracking-wide text-center text-black-300">
                     Contact
         </h1>
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-cyan-600 h-32 w-full"></div>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-400 h-32 w-full"></div>
 
                 <div className="relative p-5 lg:px-20 flex flex-col md:flex-row items-center justify-center">
                     <div className="w-full md:w-1/2 p-5 md:px-0 mx-5">
@@ -67,7 +67,7 @@ export default function Contact() {
 
                     <form
                         action="#"
-                        className="w-full md:w-1/2 border border-blue-500 p-4 bg-gray-900"
+                        className="w-full md:w-1/2 border border-blue-500 p-4 bg-gray-800"
                     >
                         <h2 className="text-2xl pb-3 font-semibold">Send Message</h2>
                         <div>
@@ -76,7 +76,7 @@ export default function Contact() {
                                 <input
                                     type="text"
                                     id="name"
-                                    className="px-3 py-2 bg-gray-600 border border-gray-900 focus:border-blue-500 focus:outline-none focus:bg-gray-800 focus:text-blue-500"
+                                    className="px-3 py-2 bg-gray-400 border border-gray-900 focus:border-blue-500 focus:outline-none focus:bg-gray-800 focus:text-blue-500"
                                     autocomplete="off"
                                 />
                             </div>
@@ -85,7 +85,7 @@ export default function Contact() {
                                 <input
                                     type="text"
                                     id="email"
-                                    className="px-3 py-2 bg-gray-600 border border-gray-900 focus:border-blue-500 focus:outline-none focus:bg-gray-800 focus:text-blue-500"
+                                    className="px-3 py-2 bg-gray-400 border border-gray-900 focus:border-blue-500 focus:outline-none focus:bg-gray-800 focus:text-blue-500"
                                     autocomplete="off"
                                 />
                             </div>
@@ -94,7 +94,7 @@ export default function Contact() {
                                 <textarea
                                     rows="4"
                                     id="message"
-                                    className="px-3 py-2 bg-gray-600 border border-gray-900 focus:border-blue-500 focus:outline-none focus:bg-gray-800 focus:text-blue-500"
+                                    className="px-3 py-2 bg-gray-400 border border-gray-900 focus:border-blue-500 focus:outline-none focus:bg-gray-800 focus:text-blue-500"
                                 ></textarea>
                             </div>
                         </div>

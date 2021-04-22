@@ -10,7 +10,7 @@ import { Link as ScrollLink } from 'react-scroll';
 export default function Skills() {
     return (
         <div className="skills-section" id="skills">
-            <div className="min-h-screen flex flex-col  bg-white" id="/skills" >
+            <div className="min-h-screen flex flex-col bg-gradient-to-b from-purple-900 via-blue-200 to-gray-900" id="/skills" >
                 <h1 className="text-center text-gray-500 text-5xl font-semibold font-serif "> Programming Languages & Tools</h1>
                 <div className=" animate-pulse flex flex-wrap justify-center mt-4 p-40">
                     <DiNodejs className="w-36 h-36 text-green-700 " aria-hidden="true" />
@@ -30,9 +30,9 @@ export default function Skills() {
                  
                 </ul>
                 <ScrollLink to="/" smooth={true}>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 animate-float mt-10 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    {/* <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 animate-float mt-10 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                    </svg>
+                    </svg> */}
                 </ScrollLink>
             </div>
         </div>
