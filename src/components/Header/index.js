@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import Logo from "../../Images/favicon.ico";
+import Logo from "../../Img/favicon.ico";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
