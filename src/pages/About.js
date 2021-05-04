@@ -2,12 +2,8 @@ import React from 'react'
 import content from '../content/index'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link as ScrollLink } from 'react-scroll';
-// import { Link } from 'react-router-dom';
-/* This example requires Tailwind CSS v2.0+ */
-/* This example requires Tailwind CSS v2.0+ */
+import Slide from 'react-reveal/Slide';
 
-
-/* This example requires Tailwind CSS v2.0+ */
 
 
 export default function About() {
@@ -41,7 +37,7 @@ export default function About() {
                             </svg>
                         </div>
                         <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
-                            {/* Testimonial card*/}
+
                             <div className="relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden">
                                 {content.about.imag.map((imag, index) => {
                                     return (
@@ -56,11 +52,6 @@ export default function About() {
 
                                 })}
 
-                                {/* <img
-                                className="absolute inset-0 h-full w-full object-cover"
-                                src="https://images.unsplash.com/photo-1521510895919-46920266ddb3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&fp-x=0.5&fp-y=0.6&fp-z=3&width=1440&height=1440&sat=-100"
-                                alt=""
-                            /> */}
                                 <div className="h-48" style={{ mixBlendMode: 'multiply' }} />
                                 <div className="absolute h-full w-full bg-gradient-to-b from-pink-800 via-yellow-200 to-cyan-500 opacity-90" />
                                 <div className="relative px-8">
@@ -98,13 +89,16 @@ export default function About() {
                     <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
                         {/* Content area */}
                         <div className="pt-12 sm:pt-16 lg:pt-20">
+
                             <h2 className="text-6xl text-center text-cyan-500 font-extrabold tracking-tight sm:text-7xl">
                                 ABOUT ME
                         </h2>
                             <div className="mt-6 text-gray-800 space-y-6">
-                                <p className="text-lg ">
-                                    {content.about.desc}
-                                </p>
+                                <Slide right >
+                                    <p className="text-lg ">
+                                        {content.about.desc}
+                                    </p>
+                                </Slide>
                                 <ScrollLink to="/portfolio" smooth={true}  >
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-10 cursor-pointer mx-auto mt-5 items-center text-center animate-float" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
