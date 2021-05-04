@@ -10,7 +10,7 @@ import { Link as ScrollLink } from "react-scroll";
 const Header = ({ toggle }) => {
     return (
         <nav
-            className='flex justify-between items-center h-16 bg-gradient-to-r from-gray-900 via-blue-900 to-green-500 relative font-sans'
+            className='flex justify-between items-center h-16 bg-gradient-to-r from-gray-800 via-blue-600 to-cyan-400 relative font-sans'
             role='navigation'
         >
 

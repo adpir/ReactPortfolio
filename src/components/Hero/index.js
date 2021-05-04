@@ -14,39 +14,47 @@ export default function Hero() {
     }, []);
 
     return (
-        <div className=" min-h-screen overflow-hidden sm:rounded-lg bg-gradient-to-r from-green-400 to-blue-500 "
+        <div className=" min-h-screen overflow-hidden flex-row "
             style={{
                 background: '#091c29',
             }}>
-            <div className="px-4 py-5 sm:p-6">
-                <div className="relative flex flex-col items-center justify-center h-screen ">
-                    <video className="absolute min-h-screen shadow rounded-lg bg-cover bg-center bg-fixed bg-no-repeat" src={Videos} autoPlay loop muted />
+            <div className="relative flex flex-col mb-11 h-screen items-center justify-center">
+                <video className="absolute shadow rounded-lg object-cover w-full h-full mb-11" src={Videos} autoPlay loop muted />
+                {/* <div className="header min-h-screen relative lg:overflow-hidden">
+            <div className="absolute min-h-screen inset-0 z-negative lg:opacity-100 opacity-50">
+                <video src={Videos} autoplay muted loop className="object-cover w-full h-full" />
+            </div> */}
+                <h2 className={`${
+                    animated ? '' : 'translate-y-10 opacity-0 '
+                    }transform transition duration-2000 text-white font-dosis text-center ease-in-out text-3xl md:text-5xl font-bold`}>
+                    {content.header.text[0]}
+                    <br />
+                    {content.header.text[1]}
+                </h2>
+                <h1 className={`${
+                    animated ? '' : 'translate-y-10 opacity-0'
+                    }transform transition duration-2000  text-white font-dosis text-center ease-in-out font-bold text-3xl bg-cyan-50`}>
+                    {content.header.text[2]}{''}
+                    <Typical
+                        steps={content.header.typical}
+                        loop={Infinity}
+                        className="inline-inblock"
+                    />
+                </h1>
+                <ScrollLink to="/about" smooth={true}>
 
-                    <h2 className={`${
-                        animated ? '' : 'translate-y-10 opacity-0'
-                        }transform transition duration-2000 text-white font-dosis text-center ease-in-out text-3xl md:text-5xl font-bold`}>
-                        {content.header.text[0]}
-                        <br />
-                        {content.header.text[1]}
-                    </h2>
-                    <h1 className={`${
-                        animated ? '' : 'translate-y-10 opacity-0'
-                        }transform transition duration-2000 text-white font-dosis text-center ease-in-out font-bold text-3xl bg-cyan-50`}>
-                        {content.header.text[2]}{''}
-                        <Typical
-                            steps={content.header.typical}
-                            loop={Infinity}
-                            className="inline-block"
-                        />
-                    </h1>
-                    <ScrollLink to="/about" smooth={true}>
-                        <button className="animate-float bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-800 hover:to-yellow-300 px-10 py-3 text-xl uppercase mt-10 rounded-lg">
-                            {content.header.btnText}
-                        </button>
-                    </ScrollLink>
-                </div>
-            </div>
-        </div>
+                    <button
+
+                        className="animate-float mx-auto mt-4  text-center inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white  bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-800 hover:to-yellow-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    >
+                        WELCOME
+      </button>
+                </ScrollLink>
+
+            </div >
+
+        </div >
+
 
     );
 };

@@ -1,9 +1,8 @@
-/* eslint-disable react/jsx-no-target-blank */
-import React from "react";
-// import content from '../../content/index'
-// // import { LazyLoadImage } from 'react-lazy-load-image-component'
+import React from 'react';
 import { GoMarkGithub } from "react-icons/go";
 import { GoBrowser } from "react-icons/go";
+import { Link as ScrollLink } from 'react-scroll';
+
 
 const portfolio = [
     {
@@ -62,55 +61,69 @@ As a user, I want an app that will help me prioritize and manage my self-care pr
 
     },
 
-]
-function CardAboutMe() {
-    return (
-        <>
-            <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
-                {portfolio.map((tech) => (
-                    <li
-                        className="col-span-1 flex flex-col text-center bg-white bg-opacity-25 rounded-lg shadow divide-y divide-gray-200"
-                    >
-                        <div className="flex-1 flex flex-col p-8">
-                            <img className=" w-80 h-50 flex-shrink-0 mx-auto squared-full" src={tech.imageUrl} alt="" />
-                            <h3 className="mt-3 text-gray-900 text-2xl font-medium">{tech.name}</h3>
-                            <dl className="mt-1 flex-grow flex flex-col justify-between">
-                                <dt className="sr-only">Title</dt>
-                                <dd className="text-gray-500 text-sm">{tech.title}</dd>
-                                <dd className="mt-5">
-                                    <span className="px-2 py-1 text-yellow-800 text-md rounded-full">
-                                        {tech.description}
-                                    </span>
-                                </dd>
-                            </dl>
-                        </div>
-                        <div>
-                            <div className="-mt-px flex divide-x divide-gray-200">
-                                <div className="w-0 flex-1 flex">
-                                    <a
-                                        href={`${tech.Github}`}
-                                        className="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg hover:text-gray-500"
-                                    >
-                                        <GoMarkGithub className="w-5 h-5 text-black-500" aria-hidden="true" />
-                                        <span className="ml-3">Github</span>
-                                    </a>
-                                </div>
-                                <div className="-ml-px w-0 flex-1 flex">
-                                    <a
-                                        href={`${tech.Live}`}
-                                        className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500"
-                                    >
-                                        <GoBrowser className="w-5 h-5 text-gray-400" aria-hidden="true" />
-                                        <span className="ml-3">Live Page</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                ))}
-            </ul>
-        </>
-    )
 
+]
+export default function CardAboutMe() {
+    return (
+        <div className="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+            <div className="absolute inset-0">
+                <div className="bg-white h-1/3 sm:h-2/3" />
+            </div>
+            <div className="relative max-w-7xl mx-auto">
+                <div className="text-center">
+                    <h1 className="text-3xl tracking-tight font-extrabold text-yellow-400 sm:text-5xl">Projects</h1>
+                    {/* <p className="mt-3 max-w-2xl mx-auto text-xl text-yellow-300 sm:mt-4">
+                    </p> */}
+                </div>
+                <div className="mt-12 max-w-lg mx-auto grid gap-5  lg:grid-cols-3 lg:max-w-none ">
+                    {portfolio.map((tech) => (
+                        <div key={tech.name} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                            <div className="flex-shrink-0">
+                                <img className="h-48 w-full object-cover" src={tech.imageUrl} alt="" />
+                            </div>
+                            <div className="flex-1 bg-blue-300 bg-opacity-25 rounded-lg shadow divide-y divide-yellow-500 border-gray-700 p-6 flex flex-col justify-between">
+                                <div className="flex-1">
+                                    <p className="text-left text-md text-base text-yellow-600">Technologies
+                                    </p>
+                                    <div className="text-center mt-2">
+                                        <p className=" text-3xl font-medium text-yellow-500">{tech.name}</p>
+                                        <p className="mt-6 mb-6 text-base text-yellow-300">{tech.description}</p>
+                                    </div>
+                                </div>
+                                <div className="-mt-px flex divide-x divide-gray-200">
+                                    <div className="w-0 flex-1 flex">
+                                        <a
+                                            href={`${tech.Github}`}
+                                            className="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-5 text-md text-pink-400 font-medium border border-transparent rounded-bl-lg hover:text-cyan-500"
+                                        >
+                                            <GoMarkGithub className="w-5 h-5 text-black-500" aria-hidden="true" />
+                                            <span className="ml-3">Github</span>
+                                        </a>
+                                    </div>
+                                    <div className="-ml-px w-0 flex-1 flex">
+                                        <a
+                                            href={`${tech.Live}`}
+                                            className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-teal-500 font-medium border border-transparent rounded-br-lg hover:text-cyan-500"
+                                        >
+                                            <GoBrowser className="w-5 h-5 text-pink-400" aria-hidden="true" />
+                                            <span className="ml-3">Live Page</span>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    ))}
+                </div>
+                <ScrollLink to="/skills" smooth={true}  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-10 cursor-pointer mx-auto mt-3 items-center text-center md:hidden  animate-float" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg>
+                </ScrollLink>
+            </div>
+
+        </div>
+    )
 }
-export default CardAboutMe;

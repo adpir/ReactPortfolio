@@ -13,6 +13,7 @@ import Home from './pages/Home'
 import Portfolio from './pages/Portfolio';
 import Skills from './pages/Skills';
 import Contact from './pages/Contact';
+// import CardAboutMe from './components/CardAboutMe';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,8 +49,12 @@ function App() {
 
       <Hero />
       <About />
-      < Portfolio />
+      {/* <CardAboutMe /> */}
+      < Portfolio
+      />
+
       <Skills />
+
       <Contact />
       <Footer />
       <Route />
