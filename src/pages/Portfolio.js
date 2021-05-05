@@ -3,14 +3,14 @@
 // /* eslint-disable jsx-a11y/alt-text */
 // /* eslint-disable jsx-a11y/heading-has-content */
 import React from "react";
-import CardAboutMe from '../components/CardAboutMe';
+import CardAboutMe from '../components/CardAboutMe/';
 
 function Portfolio() {
     const image = process.env.PUBLIC_URL + '/images/lines.png'
 
     return (
         <>
-            <div className="min-h-screen shadow rounded-lg bg-cover bg-center bg-fixed bg-no-repeat"
+            <div className="min-h-screen bg-cover bg-center bg-fixed bg-no-repeat"
                 style={{
                     backgroundImage: `url(${image})`,
                 }} id="/portfolio" >

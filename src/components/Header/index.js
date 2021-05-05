@@ -1,21 +1,22 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import Logo from "../../Img/favicon.ico";
+import Logo from "../../Img/brain_lines.png";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
 
 
 const Header = ({ toggle }) => {
+
     return (
         <nav
             className='flex justify-between items-center h-16 bg-gradient-to-r from-gray-800 via-blue-600 to-cyan-400 relative font-sans'
             role='navigation'
         >
 
-            <Link to='/' className='pl-8 pt-2.6 '>
-                <img src={Logo} className="w-full " />
+            <Link to='/' className='pr-10 '>
+                <img src={Logo} className="w-20 h-13 object-static" />
 
             </Link>
             <div className='pl-4 cursor-pointer  md:hidden ' onClick={toggle}>

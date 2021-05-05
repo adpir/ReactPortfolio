@@ -2,6 +2,10 @@ import React from 'react';
 import { GoMarkGithub } from "react-icons/go";
 import { GoBrowser } from "react-icons/go";
 import { Link as ScrollLink } from 'react-scroll';
+// import { IoLogoHtml5 } from "react-icons/io5";
+// import { DiCss3 } from "react-icons/di";
+// import { DiJavascript1 } from "react-icons/di";
+
 
 
 const portfolio = [
@@ -14,8 +18,11 @@ const portfolio = [
         Github: 'https://github.com/adpir/Word-Connections',
         Live: 'https://phillipmerriman.github.io/Word-Connections/',
         imageUrl: process.env.PUBLIC_URL + '/images/WC1.png',
+        tools: `HTML, CSS, JS`
 
     },
+
+
     {
         name: 'Dinner & A Movie',
         description: ` Create an application app were you are able to search a movie 
@@ -23,6 +30,7 @@ const portfolio = [
         Github: 'https://github.com/adpir/DinnerAndAMovie',
         Live: 'https://mysterious-retreat-01401.herokuapp.com',
         imageUrl: process.env.PUBLIC_URL + '/images/dinner.png',
+        tools: 'AXIOS,Dotenv,Express,Handlebars,MySQL,Sequelize,HTML,CSS,JS,node'
 
     },
 
@@ -33,6 +41,8 @@ As a user, I want an app that will help me prioritize and manage my self-care pr
         Github: 'https://github.com/adpir/YoGo',
         Live: 'https://yogood.herokuapp.com',
         imageUrl: process.env.PUBLIC_URL + '/images/YOGO.jpg',
+        tools: 'HTML,Tailwinds,JS,REACT,Express,Mongo,Travis,Cypress,Node'
+
 
     },
     {
@@ -42,6 +52,8 @@ As a user, I want an app that will help me prioritize and manage my self-care pr
         Github: 'https://github.com/adpir/Burger',
         Live: 'https://intense-retreat-76456.herokuapp.com',
         imageUrl: process.env.PUBLIC_URL + '/images/burger.png',
+        tools: 'HTML,CSS,JS,SQL,Express,NPM,MySQL,Node'
+
 
     },
     {
@@ -50,6 +62,8 @@ As a user, I want an app that will help me prioritize and manage my self-care pr
         Github: 'https://github.com/adpir/Progressive-Budget',
         Live: 'https://stark-waters-65434.herokuapp.com',
         imageUrl: process.env.PUBLIC_URL + '/images/Progressive.png',
+        tools: 'HTML,CSS,JS,Express,MongoDB,NPM,Node'
+
 
     },
     {
@@ -58,6 +72,8 @@ As a user, I want an app that will help me prioritize and manage my self-care pr
         Github: 'https://github.com/adpir/Workout_Tracker',
         Live: 'https://nameless-badlands-86963.herokuapp.com/',
         imageUrl: process.env.PUBLIC_URL + '/images/workout.png',
+        tools: 'HTML,JQuery,Express,Mongo,NPM,Node'
+
 
     },
 
@@ -81,49 +97,48 @@ export default function CardAboutMe() {
                             <div className="flex-shrink-0">
                                 <img className="h-48 w-full object-cover" src={tech.imageUrl} alt="" />
                             </div>
-                            <div className="flex-1 bg-blue-300 bg-opacity-25 rounded-lg shadow divide-y divide-yellow-500 border-gray-700 p-6 flex flex-col justify-between">
+                            <div className="flex-1  bg-blue-600 p-6 bg-opacity-25 rounded-lg shadow divide-y divide-yellow-500  flex flex-col justify-between">
                                 <div className="flex-1">
-                                    <p className="text-left text-md text-base text-yellow-600">Technologies
-                                    </p>
-                                    <div className="text-center mt-2">
-                                        <p className=" text-3xl font-medium text-yellow-500">{tech.name}</p>
-                                        <p className="mt-6 mb-6 text-base text-yellow-300">{tech.description}</p>
+                                    <p className="text-sm font-medium font-mono text-yellow-500">{tech.tools}</p>
+                                    <div className="block mt-6">
+                                        <p className="text-3xl tracking-tight font-extrabold text-center mb-10 text-yellow-400">{tech.name}</p>
+                                        <p className="font-medium text-yellow-200 mb-10">{tech.description}</p>
+                                        <div className="flex mt-10 mb-10 divide-x divide-yellow-200">
+                                            <div className="w-0 flex-1 flex ">
+                                                <a
+                                                    href={`${tech.Github}`}
+                                                    className="relative w-0 flex-1 inline-flex items-center justify-center py-4  font-mono text-yellow-500 font-medium border border-transparent rounded-br-lg hover:text-cyan-500"
+                                                >
+                                                    <GoMarkGithub className="w-5 h-5 text-black-500" aria-hidden="true" />
+                                                    <span className="ml-3">Github</span>
+                                                </a>
+                                            </div>
+                                            <div className="-ml-px w-0 flex-1 flex">
+                                                <a
+                                                    href={`${tech.Live}`}
+                                                    className="relative w-0 flex-1 inline-flex items-center justify-center py-4 font-mono text-yellow-500 font-medium border border-transparent rounded-br-lg hover:text-cyan-500"
+                                                >
+                                                    <GoBrowser className="w-5 h-5 text-sm font-medium font-mono text-yellow-500" aria-hidden="true" />
+                                                    <span className="ml-3">Live Page</span>
+
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="-mt-px flex divide-x divide-gray-200">
-                                    <div className="w-0 flex-1 flex">
-                                        <a
-                                            href={`${tech.Github}`}
-                                            className="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-5 text-md text-pink-400 font-medium border border-transparent rounded-bl-lg hover:text-cyan-500"
-                                        >
-                                            <GoMarkGithub className="w-5 h-5 text-black-500" aria-hidden="true" />
-                                            <span className="ml-3">Github</span>
-                                        </a>
-                                    </div>
-                                    <div className="-ml-px w-0 flex-1 flex">
-                                        <a
-                                            href={`${tech.Live}`}
-                                            className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-teal-500 font-medium border border-transparent rounded-br-lg hover:text-cyan-500"
-                                        >
-                                            <GoBrowser className="w-5 h-5 text-pink-400" aria-hidden="true" />
-                                            <span className="ml-3">Live Page</span>
-                                        </a>
-                                    </div>
-
-                                </div>
-
                             </div>
-
                         </div>
+
                     ))}
                 </div>
                 <ScrollLink to="/skills" smooth={true}  >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-10 cursor-pointer mx-auto mt-3 items-center text-center md:hidden  animate-float" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className=" bg-cyan-400  h-10 cursor-pointer mx-auto mt-3 items-center text-center md:hidden  animate-float" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                     </svg>
                 </ScrollLink>
-            </div>
 
-        </div>
+            </div>
+        </div >
+
     )
 }

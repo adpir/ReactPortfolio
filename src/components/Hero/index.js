@@ -20,10 +20,6 @@ export default function Hero() {
             }}>
             <div className="relative flex flex-col mb-11 h-screen items-center justify-center">
                 <video className="absolute shadow rounded-lg object-cover w-full h-full mb-11" src={Videos} autoPlay loop muted />
-                {/* <div className="header min-h-screen relative lg:overflow-hidden">
-            <div className="absolute min-h-screen inset-0 z-negative lg:opacity-100 opacity-50">
-                <video src={Videos} autoplay muted loop className="object-cover w-full h-full" />
-            </div> */}
                 <h2 className={`${
                     animated ? '' : 'translate-y-10 opacity-0 '
                     }transform transition duration-2000 text-white font-dosis text-center ease-in-out text-3xl md:text-5xl font-bold`}>

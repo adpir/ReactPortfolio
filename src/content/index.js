@@ -28,10 +28,8 @@ export default {
                 alt: "alice",
             },
         ],
-        desc: `A true creative at heart both on and off of the computer, I have always enjoyed making things work
- and look the way that they should. Born in the U.S. territory of Puerto Rico, I always dreamed of coming to the states to immerse myself in the culture and learn English. I moved here 11 years ago and have been in Minneapolis ever since. I have a bachelor's in Theatre, have always been involved in the arts, and love finding new ways to get creative. I worked for over six years at a software company. I recently completed a full-stack software engineer coding program at the University of Minnesota that expanded my creative toolbelt immensely. I enjoy tackling problems, have a strong range of leadership experience in multiple fields of work, and work well with others. Recently I was nominated as a "Transformer" by the team I
- lead for my hard work and dedication within the company. I look forward to opportunities to create
- or augment existing systems in ways that 'wow' people and make real, long-lasting impressions.`,
+        desc: `A passionate, creative, bilingual Full-Stack Software Engineer with a background in operations. I am a true creative at heart both on and off the computer, I have always enjoyed making things work and look the way they should. With a recently completed Full-Stack Certificate from the University of Minnesota with technical experience in HTML, CSS, Javascript, React, Node.js. and many more, I am ready and excited to learn the next new thing. I am looking to specialize as a Front-End Developer to marry my creativity with technology. 
+When I work on a project, my goal is to make things visually striking, uniform, and cohesive to messaging and brand. `,
         btnText: "Scroll down",
 
     },

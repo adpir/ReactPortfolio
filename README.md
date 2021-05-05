@@ -26,12 +26,6 @@
 
 - [Profile](#Profile)
 
-### Application Requirements
-
-> Must use `ReactJS`
-
-> Must use a `Node` and `Tailwinds CSS`
-
 ### Description:
 
 ---
@@ -40,11 +34,9 @@ Welcome to my portfolio.
 
 ---
 
-### Visuals:
-
 ### Installation:
 
-:computer:
+:computer: `Must use React and Tailwinds`
 
 ### Usage:
 
