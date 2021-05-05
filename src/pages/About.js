@@ -9,7 +9,7 @@ import Slide from 'react-reveal/Slide';
 export default function About() {
     return (
         <div className="about-section" id="about">
-            <div className="relative bg-gradient-to-b from-pink-800 via-yellow-200 to-cyan-400  py-16 sm:py-40">
+            <div className="relative bg-gradient-to-b from-pink-800 via-yellow-300 to-cyan-500  py-16 sm:py-40">
                 <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start" id="/about" >
                     <div className="relative sm:py-16 lg:py-0">
                         <div aria-hidden="true" className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
@@ -43,7 +43,7 @@ export default function About() {
                                     return (
                                         <span className={`${
                                             index % 2 === 0 ? 'animate-float' : 'animate-refloat'
-                                            } absolute inset-0 h-full w-full  object-cover bg-gradient-to-b from-pink-800 via-yellow-200 to-cyan-500 shadow-2xl mb-20 square-full flex items-center p-5`}>
+                                            } absolute inset-0 h-full w-full  object-cover bg-gradient-to-b from-pink-800 via-yellow-200 to-cyan-400 shadow-2xl mb-20 square-full flex items-center p-5`}>
                                             <LazyLoadImage src={imag.img} alt={imag.alt} />
 
 
@@ -93,7 +93,7 @@ export default function About() {
                             <h2 className="text-6xl text-center text-cyan-500 font-extrabold tracking-tight sm:text-7xl">
                                 ABOUT ME
                         </h2>
-                            <div className="mt-6 text-gray-800 space-y-6">
+                            <div className="mt-6 text-justify text-gray-900 space-y-6">
                                 <Slide right >
                                     <p className="text-lg ">
                                         {content.about.desc}
@@ -103,7 +103,7 @@ export default function About() {
 
                                     {/* <img src={Logo} className="rounded-full h-24 w-24 cursor-pointer  mx-auto mt-5 items-center text-center animate-float opacity-50" alt="brain" /> */}
 
-                                    <svg xmlns="http://www.w3.org/2000/svg" className=" h-10 cursor-pointer mx-auto mt-5 items-center text-center animate-float" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-10 text-pink-800 cursor-pointer mx-auto mt-5 items-center text-center animate-float" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                                     </svg>
                                 </ScrollLink>

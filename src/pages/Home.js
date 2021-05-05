@@ -6,7 +6,7 @@ export default class Home extends Component {
     return (
       <>
         <div className="home-section" id="home"></div>
-
+        <div className="home" id="/" ></div>
 
       </>
 

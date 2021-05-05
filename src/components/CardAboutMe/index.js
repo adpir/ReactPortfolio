@@ -2,9 +2,6 @@ import React from 'react';
 import { GoMarkGithub } from "react-icons/go";
 import { GoBrowser } from "react-icons/go";
 import { Link as ScrollLink } from 'react-scroll';
-// import { IoLogoHtml5 } from "react-icons/io5";
-// import { DiCss3 } from "react-icons/di";
-// import { DiJavascript1 } from "react-icons/di";
 
 
 
@@ -132,7 +129,7 @@ export default function CardAboutMe() {
                     ))}
                 </div>
                 <ScrollLink to="/skills" smooth={true}  >
-                    <svg xmlns="http://www.w3.org/2000/svg" className=" bg-cyan-400  h-10 cursor-pointer mx-auto mt-3 items-center text-center md:hidden  animate-float" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className=" text-cyan-400  h-10 cursor-pointer mx-auto mt-3 items-center text-center md:hidden  animate-float" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                     </svg>
                 </ScrollLink>

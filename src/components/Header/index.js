@@ -39,7 +39,7 @@ const Header = ({ toggle }) => {
             <div className='pr-8 md:block  hidden'>
 
                 <ScrollLink
-                    className="p-4 hover:text-gray-300"
+                    className="p-4 text-white hover:text-yellow-600"
                     activeClass="active"
                     to="home"
                     spy={true}
@@ -49,7 +49,7 @@ const Header = ({ toggle }) => {
                 >Home
                 </ScrollLink>
                 <ScrollLink
-                    className="p-4 hover:text-gray-300"
+                    className="p-4 text-white hover:text-yellow-600"
                     activeClass="active"
                     to="about"
                     spy={true}
@@ -59,7 +59,7 @@ const Header = ({ toggle }) => {
                 >About
                 </ScrollLink>
                 <ScrollLink
-                    className="p-4 hover:text-gray-300"
+                    className="p-4 text-white hover:text-yellow-600"
                     activeClass="active"
                     to="portfolio"
                     spy={true}
@@ -69,7 +69,7 @@ const Header = ({ toggle }) => {
                 >Portfolio
                 </ScrollLink>
                 <ScrollLink
-                    className="p-4 hover:text-gray-300"
+                    className="p-4 text-white hover:text-yellow-600"
                     activeClass="active"
                     to="skills"
                     spy={true}
@@ -79,7 +79,7 @@ const Header = ({ toggle }) => {
                 >Skills
                 </ScrollLink>
                 <ScrollLink
-                    className="p-4 hover:text-gray-300"
+                    className="p-4 text-white hover:text-yellow-600"
                     activeClass="active"
                     to="contact"
                     spy={true}

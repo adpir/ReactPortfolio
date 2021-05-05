@@ -65,6 +65,7 @@ export default function Footer() {
                 </div>
                 <p className="mt-8 text-center text-base text-yellow-500">&copy; 2021 Alice Piar, Inc. All rights reserved.</p>
             </div>
+
         </footer>
     )
 }

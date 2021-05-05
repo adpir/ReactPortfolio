@@ -49,12 +49,10 @@ function App() {
 
       <Hero />
       <About />
-      {/* <CardAboutMe /> */}
       < Portfolio
       />
 
       <Skills />
-
       <Contact />
       <Footer />
       <Route />

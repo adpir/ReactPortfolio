@@ -12,7 +12,7 @@ const Dropdown = ({ isOpen, toggle }) => {
             onClick={toggle}
         >
             <ScrollLink
-                className="p-4 hover:text-gray-300"
+                className="p-4"
                 activeClass="active"
                 to="about"
                 spy={true}
@@ -21,7 +21,7 @@ const Dropdown = ({ isOpen, toggle }) => {
                 duration={3000}
             >About</ScrollLink>
             <ScrollLink
-                className="p-4 hover:text-gray-300"
+                className="p-4"
                 activeClass="active"
                 to="portfolio"
                 spy={true}
@@ -30,7 +30,7 @@ const Dropdown = ({ isOpen, toggle }) => {
                 duration={3000}
             >Portfolio</ScrollLink>
             <ScrollLink
-                className="p-4 hover:text-gray-300"
+                className="p-4 "
                 activeClass="active"
                 to="skills"
                 spy={true}
@@ -39,7 +39,7 @@ const Dropdown = ({ isOpen, toggle }) => {
                 duration={4000}
             >Skills</ScrollLink>
             <ScrollLink
-                className="p-4 hover:text-gray-300"
+                className="p-4"
                 activeClass="active"
                 to="contact"
                 spy={true}
