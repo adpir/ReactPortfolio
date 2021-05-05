@@ -14,11 +14,11 @@ export default function Hero() {
     }, []);
 
     return (
-        <div className=" min-h-screen overflow-hidden flex-row "
+        <div className="min-h-screen overflow-hidden flex-row "
             style={{
                 background: '#091c29',
             }}>
-            <div className="relative flex flex-col mb-11 h-screen items-center justify-center">
+            <div className="flex flex-col h-screen mb-11 items-center justify-center">
                 <video className="absolute shadow rounded-lg object-cover w-full h-full mb-11" src={Videos} autoPlay loop muted />
                 <h2 className={`${
                     animated ? '' : 'translate-y-10 opacity-0 '
@@ -41,7 +41,7 @@ export default function Hero() {
 
                     <button
 
-                        className="animate-float mx-auto mt-4  text-center inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white  bg-gradient-to-r from-cyan-500 to-blue-500  hover:from-pink-800 hover:to-yellow-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        className="animate-float mx-auto mt-4 text-center inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white  bg-gradient-to-r from-cyan-500 to-blue-500  hover:from-pink-800 hover:to-yellow-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     >
                         WELCOME
       </button>
