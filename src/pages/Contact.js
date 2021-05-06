@@ -7,7 +7,7 @@ import { GoFilePdf } from "react-icons/go";
 import { MailIcon } from '@heroicons/react/outline'
 
 export default function Contact() {
-    const Resume = process.env.PUBLIC_URL + '/images/AlicePiar.pdf'
+    const Resume = process.env.PUBLIC_URL + '/images/Alice-Piar-Resume.pdf'
     const Linkedin = "https://www.linkedin.com/in/alicepiar/"
     const Github = "https://github.com/adpir"
 
