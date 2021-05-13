@@ -22,8 +22,6 @@
 
 - [Tools](#Tools)
 
-- [Contributing](#Contributing)
-
 - [Profile](#Profile)
 
 ### Description:
@@ -51,12 +49,7 @@ Welcome to my portfolio.
 - Shutterstock
 - NPM
 
-### Contributing:
-
-:wave: Pull requests are welcome. For major changes,<br>
-Please open an issue first to discuss what you would like to change.<br>
-Please make sure to update tests as appropriate.<br>
-
 ### Profile:
 
-:octocat: [GitHub](https://adpir.github.io/ReactPortfolio/)
+[GitHub](https://adpir.github.io/ReactPortfolio/) </br>
+[Portfolio](https://adpir.github.io/ReactPortfolio/)
