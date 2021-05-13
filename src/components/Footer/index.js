@@ -3,10 +3,8 @@ import React from 'react'
 
 const navigation = {
     main: [
-        { name: 'About', href: '#' },
-        { name: 'Portfolio', href: '#' },
-        { name: 'Tools', href: '#' },
-        { name: 'Contact', href: '#' },
+        { name: 'Home', href: '#' },
+
 
     ],
     social: [
